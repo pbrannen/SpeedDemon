@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\Patrick\Documents\DEALIA LLC\website\Dealia\Dealia\SpeedDemon" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/SpeedMultiplicationTest.Web.pdb" publishTime="09/15/2010 15:19:30" />
+    <file relUrl="bin/SpeedMultiplicationTest.Web.dll" publishTime="09/15/2010 15:19:30" />
+    <file relUrl="Web.config" publishTime="09/14/2010 20:14:54" />
+    <file relUrl="SpeedDemon.aspx" publishTime="09/15/2010 16:19:13" />
+    <file relUrl="Silverlight.js" publishTime="09/12/2010 12:09:53" />
+    <file relUrl="SpeedDemon.html" publishTime="09/15/2010 15:18:56" />
+    <file relUrl="ClientBin/SilverlightApplication1.xap" publishTime="09/15/2010 16:15:03" />
+  </publishProfile>
+</publishData>

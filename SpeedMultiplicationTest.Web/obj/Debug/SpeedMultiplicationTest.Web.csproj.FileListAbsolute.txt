@@ -1,0 +1,10 @@
+c:\users\patrick\documents\visual studio 2010\Projects\SilverlightApplication1\SpeedMultiplicationTest.Web\bin\SpeedMultiplicationTest.Web.dll
+c:\users\patrick\documents\visual studio 2010\Projects\SilverlightApplication1\SpeedMultiplicationTest.Web\bin\SpeedMultiplicationTest.Web.pdb
+c:\users\patrick\documents\visual studio 2010\Projects\SilverlightApplication1\SpeedMultiplicationTest.Web\obj\Debug\ResolveAssemblyReference.cache
+c:\users\patrick\documents\visual studio 2010\Projects\SilverlightApplication1\SpeedMultiplicationTest.Web\obj\Debug\SpeedMultiplicationTest.Web.dll
+c:\users\patrick\documents\visual studio 2010\Projects\SilverlightApplication1\SpeedMultiplicationTest.Web\obj\Debug\SpeedMultiplicationTest.Web.pdb
+C:\Users\Patrick\Documents\Visual Studio 2010\Projects\TimePractice\SpeedMultiplicationTest.Web\bin\SpeedMultiplicationTest.Web.dll
+C:\Users\Patrick\Documents\Visual Studio 2010\Projects\TimePractice\SpeedMultiplicationTest.Web\bin\SpeedMultiplicationTest.Web.pdb
+C:\Users\Patrick\Documents\Visual Studio 2010\Projects\TimePractice\SpeedMultiplicationTest.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Patrick\Documents\Visual Studio 2010\Projects\TimePractice\SpeedMultiplicationTest.Web\obj\Debug\SpeedMultiplicationTest.Web.dll
+C:\Users\Patrick\Documents\Visual Studio 2010\Projects\TimePractice\SpeedMultiplicationTest.Web\obj\Debug\SpeedMultiplicationTest.Web.pdb

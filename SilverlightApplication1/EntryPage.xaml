@@ -1,0 +1,79 @@
+﻿<!--
+-  
+- Written by Patrick Brannen for Dealia LLC, Speed Demon, a timed test learning application for elementary school children
+-     Copyright (C) 2009 Dealia LLC
+-
+-     This program is free software: you can redistribute it and/or modify
+-     it under the terms of the GNU General Public License as published by
+-     the Free Software Foundation, either version 3 of the License, or
+-     (at your option) any later version.
+-
+-     This program is distributed in the hope that it will be useful,
+-     but WITHOUT ANY WARRANTY; without even the implied warranty of
+-     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-     GNU General Public License for more details.
+-
+-     You should have received a copy of the GNU General Public License
+-     along with this program.  If not, see<http://www.gnu.org/licenses/> .
+-->
+    <UserControl x:Class="SilverlightApplication1.EntryPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="800" d:DesignWidth="600" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+<!-- select time, operator, number per page, print or online save scores for comparison and charting, etc.-->
+        <Grid x:Name="LayoutRoot" Background="#FFB66102" Width="552" Height="421" ShowGridLines="False" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="80"/>
+            </Grid.ColumnDefinitions>
+        <Border CornerRadius="5" BorderBrush="White" BorderThickness="5" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="3">
+            <Image Height="360" Name="image1" Stretch="Fill" Width="392" Source="/SilverlightApplication1;component/Slice%201.png" />
+        </Border>
+        <TextBlock Grid.Column="1" Name="textBlockSD" Text="Speed Demon" Width="351" Foreground="White" FontSize="28" Margin="20,9,20,0" />
+        <HyperlinkButton Grid.Row="3" Grid.Column="3"  NavigateUri="http://www.dealia.net" >
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Right" Foreground="#FFF08207">
+                 © Dealia LLC
+                </TextBlock>
+            </HyperlinkButton>
+            <Image Height="38" HorizontalAlignment="Left" Name="ImageLogo" Stretch="Fill" VerticalAlignment="Top" Width="68" Source="/SilverlightApplication1;component/Images/logo_D.png" Margin="12,12,0,0" />
+            <sdk:Label Height="28" HorizontalAlignment="Left" Name="labelOperation" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.Row="1" Content="Operation" Margin="96,77,0,0" Foreground="White" HorizontalContentAlignment="Center" />
+            <sdk:Label Height="28" HorizontalAlignment="Left" Margin="96,140,0,0" Name="labelTime" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.Row="1" Content="Time" Foreground="White" HorizontalContentAlignment="Center" />
+            <sdk:Label Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="96,169,0,0" Name="labelNumber" VerticalAlignment="Top" Width="120" Content="Number" Foreground="White" HorizontalContentAlignment="Center" />
+            <sdk:Label Grid.Column="1" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="96,201,0,0" Name="labelOrientation" VerticalAlignment="Top" Width="120" Content="Orientation" Foreground="White" HorizontalContentAlignment="Center" />
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="166,79,0,0" Name="comboBoxOperation" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.Row="1" ItemsSource="{Binding}" SelectedIndex="2" HorizontalContentAlignment="Center">
+                <ComboBoxItem Content="Addition" />
+                <ComboBoxItem Content="Subtraction" />
+                <ComboBoxItem Content="Multiplication" />
+                <ComboBoxItem Content="Division" IsEnabled="False" />
+            </ComboBox>
+            <TextBox Grid.Column="1" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="166,140,0,0" Name="textBoxTime" VerticalAlignment="Top" Width="40" Text="3" HorizontalContentAlignment="Center" />
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="212,140,0,0" Name="comboBoxTime" VerticalAlignment="Top" Width="74" Grid.Column="1" Grid.Row="1" SelectedIndex="1" HorizontalContentAlignment="Center">
+                <ComboBoxItem Content="Seconds" />
+                <ComboBoxItem Content="Minutes" />
+            </ComboBox>
+            <TextBox Grid.Column="1" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="166,169,0,0" Name="textBoxNumberOfProblems" VerticalAlignment="Top" Width="120" Text="60" HorizontalContentAlignment="Center" />
+            <ComboBox Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="166,197,0,0" Name="comboBoxOrientation" VerticalAlignment="Top" Width="120" Grid.Column="1" SelectedIndex="0" HorizontalContentAlignment="Center" IsEnabled="False">
+                <ComboBoxItem Content="Horizontal" />
+                <ComboBoxItem Content="Vertical" />
+            </ComboBox>
+            <Button Content="Play" Height="23" HorizontalAlignment="Right" Margin="0,0,6,5" Name="buttonPlay" VerticalAlignment="Bottom" Width="50" Grid.Column="2" Grid.Row="1" Click="button1_Click" />
+            <Button Content="Print" Height="23" HorizontalAlignment="Right" Name="buttonPrint" VerticalAlignment="Bottom" Width="50" Grid.Column="1" Grid.Row="1" Margin="0,0,66,5" Grid.ColumnSpan="2" IsEnabled="False" />
+            <sdk:Label Height="28" HorizontalAlignment="Left" Margin="96,228,0,0" Name="labelMode" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.Row="1" Content="Mode" Foreground="White" HorizontalContentAlignment="Center" />
+            <ComboBox Height="23" HorizontalAlignment="Left" Margin="166,224,0,0" Name="comboBoxMode" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.Row="1" SelectedIndex="0" HorizontalContentAlignment="Center" IsEnabled="False">
+                <ComboBoxItem Content="Entry" />
+                <ComboBoxItem Content="Mult Choice" />
+            </ComboBox>
+            <sdk:Label Content="By" Foreground="White" Height="28" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="96,109,0,0" Name="labelBt" VerticalAlignment="Top" Width="120" Grid.Column="1" Grid.Row="1" />
+            <TextBox Grid.Column="1" Height="23" HorizontalAlignment="Left" HorizontalContentAlignment="Center"  Margin="166,110,0,0" Name="textBoxBy" VerticalAlignment="Top" Width="120" Grid.Row="1" Text="3"/>
+    </Grid>
+
+</UserControl>
